@@ -1,0 +1,26 @@
+.layout {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+.header {
+  padding: 20px 0;
+  border-bottom: 1px solid var(--border);
+  margin-bottom: 24px;
+}
+
+.header-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.header-title:hover {
+  text-decoration: none;
+  color: var(--accent);
+}
+
+.main {
+  padding-bottom: 48px;
+}

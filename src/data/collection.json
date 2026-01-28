@@ -1,0 +1,316 @@
+{
+  "series": [
+    {
+      "id": "absolute-batman",
+      "name": "Absolute Batman",
+      "publisher": "DC",
+      "totalIssues": 17,
+      "ownedCoverA": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17
+      ],
+      "ownedOther": [
+        1
+      ],
+      "imageUrl": "https://i.ebayimg.com/images/g/GcIAAOSw9VNnS7pS/s-l500.jpg",
+      "issueImages": {
+        "1": "https://i.ebayimg.com/images/g/DREAAOSwwn5m39P5/s-l500.jpg",
+        "2": "https://i.ebayimg.com/images/g/QJ4AAOSwWhBm07VF/s-l500.jpg",
+        "3": "https://i.ebayimg.com/images/g/UyAAAOSwE3hm~gCx/s-l500.jpg",
+        "4": "https://i.ebayimg.com/images/g/GcIAAOSw9VNnS7pS/s-l500.jpg",
+        "5": "https://i.ebayimg.com/images/g/o4kAAOSwXuhnWOqn/s-l500.jpg",
+        "6": "https://i.ebayimg.com/images/g/BwIAAOSw~qZnfL5I/s-l500.jpg",
+        "7": "https://i.ebayimg.com/images/g/FwYAAOSwDQRnpE6a/s-l500.jpg",
+        "8": "https://i.ebayimg.com/images/g/EEwAAOSwqF1nyrZf/s-l500.jpg",
+        "9": "https://i.ebayimg.com/images/g/yk0AAOSwufdn9e~x/s-l500.jpg",
+        "10": "https://i.ebayimg.com/images/g/d8cAAOSwK7VoGV5m/s-l500.jpg",
+        "11": "https://i.ebayimg.com/images/g/AIUAAOSwv85oQ44A/s-l500.jpg",
+        "12": "https://i.ebayimg.com/images/g/u1IAAeSwQxdoZhVJ/s-l500.jpg",
+        "13": "https://i.ebayimg.com/images/g/lIcAAeSwHQ9ojWYx/s-l500.jpg",
+        "14": "https://i.ebayimg.com/images/g/DA8AAeSw3eZov6Yb/s-l500.jpg",
+        "15": "https://i.ebayimg.com/images/g/0~oAAeSws2Fo5F2P/s-l500.jpg",
+        "16": "https://i.ebayimg.com/images/g/tr4AAeSw1H1pEazp/s-l500.jpg",
+        "17": "https://i.ebayimg.com/images/g/0IcAAeSwAI9pLmhZ/s-l500.jpg"
+      }
+    },
+    {
+      "id": "absolute-batman-annual",
+      "name": "Absolute Batman Annual",
+      "publisher": "DC",
+      "totalIssues": 1,
+      "ownedCoverA": [
+        1
+      ],
+      "ownedOther": [],
+      "imageUrl": "https://i.ebayimg.com/images/g/CDcAAeSwZLFosrpE/s-l500.jpg",
+      "issueImages": {
+        "1": "https://i.ebayimg.com/images/g/CDcAAeSwZLFosrpE/s-l500.jpg"
+      }
+    },
+    {
+      "id": "absolute-batman-ark-m-special",
+      "name": "Absolute Batman Ark-M Special",
+      "publisher": "DC",
+      "totalIssues": 1,
+      "ownedCoverA": [
+        1
+      ],
+      "ownedOther": [],
+      "imageUrl": "https://i.ebayimg.com/images/g/-JcAAeSw8plo5GS8/s-l500.jpg",
+      "issueImages": {
+        "1": "https://i.ebayimg.com/images/g/-JcAAeSw8plo5GS8/s-l500.jpg"
+      }
+    },
+    {
+      "id": "absolute-evil",
+      "name": "Absolute Evil",
+      "publisher": "DC",
+      "totalIssues": 1,
+      "ownedCoverA": [
+        1
+      ],
+      "ownedOther": [],
+      "imageUrl": "https://i.ebayimg.com/images/g/NCcAAeSwfldogZrO/s-l500.jpg",
+      "issueImages": {
+        "1": "https://i.ebayimg.com/images/g/NCcAAeSwfldogZrO/s-l500.jpg"
+      }
+    },
+    {
+      "id": "absolute-flash",
+      "name": "Absolute Flash",
+      "publisher": "DC",
+      "totalIssues": 12,
+      "ownedCoverA": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        12
+      ],
+      "ownedOther": [
+        1,
+        11
+      ],
+      "imageUrl": "https://i.ebayimg.com/images/g/8g8AAOSwx8VnsbVc/s-l500.jpg",
+      "issueImages": {
+        "1": "https://i.ebayimg.com/images/g/DWwAAeSwpbBn2LkY/s-l500.jpg",
+        "2": "https://i.ebayimg.com/images/g/8g8AAOSwx8VnsbVc/s-l500.jpg",
+        "3": "https://i.ebayimg.com/images/g/LbAAAOSwckZnz7nW/s-l500.jpg",
+        "4": "https://i.ebayimg.com/images/g/kPIAAOSwvfBn~yDf/s-l500.jpg",
+        "5": "https://i.ebayimg.com/images/g/QmwAAOSw-0VoGvHz/s-l500.jpg",
+        "6": "https://i.ebayimg.com/images/g/buoAAOSwPhBoSi8S/s-l500.jpg",
+        "7": "https://i.ebayimg.com/images/g/9FcAAeSw03Vob1Vl/s-l500.jpg",
+        "8": "https://i.ebayimg.com/images/g/ZakAAeSwR-9ooqsM/s-l500.jpg",
+        "9": "https://i.ebayimg.com/images/g/-6sAAeSwiIhozLbK/s-l500.jpg",
+        "10": "https://i.ebayimg.com/images/g/P64AAeSwn0Fo8EKM/s-l500.jpg",
+        "11": "https://i.ebayimg.com/images/g/kxQAAeSwzLtpEaZ5/s-l500.jpg",
+        "12": "https://i.ebayimg.com/images/g/CQIAAeSwB9lpNkfS/s-l500.jpg"
+      }
+    },
+    {
+      "id": "absolute-superman",
+      "name": "Absolute Superman",
+      "publisher": "DC",
+      "totalIssues": 16,
+      "ownedCoverA": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      "ownedOther": [
+        1
+      ],
+      "imageUrl": "https://i.ebayimg.com/images/g/~L0AAOSwLyJnSVkG/s-l500.jpg",
+      "issueImages": {
+        "1": "https://i.ebayimg.com/images/g/BYwAAOSwB9VmzoIM/s-l500.jpg",
+        "2": "https://i.ebayimg.com/images/g/ZmoAAOSwrDBm~y1O/s-l500.jpg",
+        "3": "https://i.ebayimg.com/images/g/84EAAOSwx7tnHZp2/s-l500.jpg",
+        "4": "https://i.ebayimg.com/images/g/~L0AAOSwLyJnSVkG/s-l500.jpg",
+        "5": "https://i.ebayimg.com/images/g/i3sAAOSwJ9ZnfLPI/s-l500.jpg",
+        "6": "https://i.ebayimg.com/images/g/-OEAAOSwhchnnZPD/s-l500.jpg",
+        "7": "https://i.ebayimg.com/images/g/NEcAAOSwtBdnw9xw/s-l500.jpg",
+        "8": "https://i.ebayimg.com/images/g/xZQAAOSwkYBn7f6j/s-l500.jpg",
+        "9": "https://i.ebayimg.com/images/g/aPUAAOSwf-9oFDt9/s-l500.jpg",
+        "10": "https://i.ebayimg.com/images/g/3u0AAOSwuyJoOXzB/s-l500.jpg",
+        "11": "https://i.ebayimg.com/images/g/An0AAeSwdlJoZhau/s-l500.jpg",
+        "12": "https://i.ebayimg.com/images/g/OUAAAeSwtHFogZvj/s-l500.jpg",
+        "13": "https://i.ebayimg.com/images/g/en8AAeSwuBlouNyU/s-l500.jpg",
+        "14": "https://i.ebayimg.com/images/g/LEIAAeSwxT1o5GVw/s-l500.jpg",
+        "15": "https://i.ebayimg.com/images/g/f5AAAeSwq49pL76e/s-l500.jpg",
+        "16": "https://i.ebayimg.com/images/g/B30AAeSwQIRpLli0/s-l500.jpg"
+      }
+    },
+    {
+      "id": "absolute-wonder-woman",
+      "name": "Absolute Wonder Woman",
+      "publisher": "DC",
+      "totalIssues": 15,
+      "ownedCoverA": [
+        15
+      ],
+      "ownedOther": [
+        1
+      ],
+      "imageUrl": "https://i.ebayimg.com/images/g/FeUAAeSwqy1o~DbB/s-l500.jpg",
+      "issueImages": {
+        "1": "https://i.ebayimg.com/images/g/sIIAAOSwGB1m0rm8/s-l500.jpg",
+        "15": "https://i.ebayimg.com/images/g/FeUAAeSwqy1o~DbB/s-l500.jpg"
+      }
+    },
+    {
+      "id": "batman",
+      "name": "Batman",
+      "publisher": "DC",
+      "totalIssues": 1,
+      "ownedCoverA": [],
+      "ownedOther": [
+        1
+      ],
+      "imageUrl": "https://i.ebayimg.com/images/g/l2MAAeSwG9NobU41/s-l500.jpg",
+      "issueImages": {
+        "1": "https://i.ebayimg.com/images/g/l2MAAeSwG9NobU41/s-l500.jpg"
+      }
+    },
+    {
+      "id": "batman-deadpool",
+      "name": "Batman/Deadpool",
+      "publisher": "DC",
+      "totalIssues": 1,
+      "ownedCoverA": [],
+      "ownedOther": [
+        1
+      ],
+      "imageUrl": "https://i.ebayimg.com/images/g/uFoAAeSwS7xorV8s/s-l500.jpg",
+      "issueImages": {
+        "1": "https://i.ebayimg.com/images/g/uFoAAeSwS7xorV8s/s-l500.jpg"
+      }
+    },
+    {
+      "id": "batman-the-dark-knight-returns",
+      "name": "Batman: The Dark Knight Returns",
+      "publisher": "DC",
+      "totalIssues": 1,
+      "ownedCoverA": [],
+      "ownedOther": [
+        1
+      ],
+      "imageUrl": "https://i.ebayimg.com/images/g/PAUAAeSw~GdpNk98/s-l500.jpg",
+      "issueImages": {
+        "1": "https://i.ebayimg.com/images/g/PAUAAeSw~GdpNk98/s-l500.jpg"
+      }
+    },
+    {
+      "id": "dc-all-in-special",
+      "name": "DC All In Special",
+      "publisher": "DC",
+      "totalIssues": 1,
+      "ownedCoverA": [
+        1
+      ],
+      "ownedOther": [],
+      "imageUrl": "https://i.ebayimg.com/images/g/ZLEAAOSw6LtnKCW-/s-l500.jpg",
+      "issueImages": {
+        "1": "https://i.ebayimg.com/images/g/ZLEAAOSw6LtnKCW-/s-l500.jpg"
+      }
+    },
+    {
+      "id": "dc-k-o",
+      "name": "DC K.O.",
+      "publisher": "DC",
+      "totalIssues": 4,
+      "ownedCoverA": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "ownedOther": [],
+      "imageUrl": "https://i.ebayimg.com/images/g/CnIAAeSw6c9ojWQG/s-l500.jpg",
+      "issueImages": {
+        "1": "https://i.ebayimg.com/images/g/CnIAAeSw6c9ojWQG/s-l500.jpg",
+        "2": "https://i.ebayimg.com/images/g/Q34AAeSwhk9o3dvz/s-l500.jpg",
+        "3": "https://i.ebayimg.com/images/g/CA0AAeSwVM5pEaoS/s-l500.jpg",
+        "4": "https://i.ebayimg.com/images/g/OXwAAeSwP2VpLqHO/s-l500.jpg"
+      }
+    },
+    {
+      "id": "dc-k-o-knightfight",
+      "name": "DC K.O. Knightfight",
+      "publisher": "DC",
+      "totalIssues": 4,
+      "ownedCoverA": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "ownedOther": [],
+      "imageUrl": "https://i.ebayimg.com/images/g/DeQAAeSwR4Fo5GLP/s-l500.jpg",
+      "issueImages": {
+        "1": "https://i.ebayimg.com/images/g/ZfQAAeSwyS5ouNvJ/s-l500.jpg",
+        "2": "https://i.ebayimg.com/images/g/DeQAAeSwR4Fo5GLP/s-l500.jpg",
+        "3": "https://i.ebayimg.com/images/g/-KYAAeSw48ZpL7np/s-l500.jpg",
+        "4": "https://i.ebayimg.com/images/g/Ca8AAeSwrEdpLleA/s-l500.jpg"
+      }
+    },
+    {
+      "id": "dc-k-o-one-shots",
+      "name": "DC K.O. One-Shots",
+      "publisher": "DC",
+      "totalIssues": 1,
+      "ownedCoverA": [
+        1
+      ],
+      "ownedOther": [],
+      "imageUrl": "https://i.ebayimg.com/images/g/vKoAAeSwQYRo5GIJ/s-l500.jpg",
+      "issueImages": {
+        "1": "https://i.ebayimg.com/images/g/vKoAAeSwQYRo5GIJ/s-l500.jpg"
+      }
+    },
+    {
+      "id": "deadpool-batman",
+      "name": "Deadpool/Batman",
+      "publisher": "DC",
+      "totalIssues": 1,
+      "ownedCoverA": [],
+      "ownedOther": [
+        1
+      ],
+      "imageUrl": "https://i.ebayimg.com/images/g/Qv8AAeSwRehoZyJ3/s-l500.jpg",
+      "issueImages": {
+        "1": "https://i.ebayimg.com/images/g/Qv8AAeSwRehoZyJ3/s-l500.jpg"
+      }
+    }
+  ]
+}
