@@ -4,7 +4,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "node scripts/import.mjs && tsc && vite build",
+    "build": "tsc && vite build",
     "preview": "vite preview",
     "import": "node scripts/import.mjs"
   },
