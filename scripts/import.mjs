@@ -72,11 +72,15 @@ function main() {
 
   // --- Extract images from eBay files ---
   const seriesImages = {};
-  const issueImages = {}; // series -> { vol: url }
+  // issueCovers: series -> vol -> [ { cover, imageUrl } ]
+  const issueCovers = {};
 
   const ebayFiles = readdirSync(DATA_DIR).filter(
     (f) => f.startsWith("Ebay_Purchase_History_") && f.endsWith(".xlsx")
   );
+
+  // Track seen cover+vol combos to avoid duplicates
+  const seenCovers = new Set();
 
   for (const file of ebayFiles) {
     const rows = readSheet(join(DATA_DIR, file));
@@ -91,10 +95,30 @@ function main() {
       if (!seriesImages[info.series] || isCoverA) {
         seriesImages[info.series] = imgUrl;
       }
-      if (!issueImages[info.series]) issueImages[info.series] = {};
-      if (!issueImages[info.series][info.vol] || isCoverA) {
-        issueImages[info.series][info.vol] = imgUrl;
+
+      // Collect all covers per issue
+      const key = `${info.series}|${info.vol}|${info.cover}`;
+      if (!seenCovers.has(key)) {
+        seenCovers.add(key);
+        if (!issueCovers[info.series]) issueCovers[info.series] = {};
+        if (!issueCovers[info.series][info.vol]) issueCovers[info.series][info.vol] = [];
+        issueCovers[info.series][info.vol].push({
+          cover: info.cover,
+          imageUrl: imgUrl,
+        });
       }
+    }
+  }
+
+  // Sort covers per issue: Cover A first, then alphabetically
+  for (const series of Object.values(issueCovers)) {
+    for (const vol of Object.keys(series)) {
+      series[vol].sort((a, b) => {
+        const aIsA = a.cover.toUpperCase().includes("CVR A") ? 0 : 1;
+        const bIsA = b.cover.toUpperCase().includes("CVR A") ? 0 : 1;
+        if (aIsA !== bIsA) return aIsA - bIsA;
+        return a.cover.localeCompare(b.cover);
+      });
     }
   }
 
@@ -109,10 +133,10 @@ function main() {
         .filter((v) => !coverA[name]?.has(v))
         .sort((a, b) => a - b);
 
-      const imgs = issueImages[name] || {};
-      const issueImgs = {};
-      for (const [v, url] of Object.entries(imgs)) {
-        issueImgs[String(v)] = url;
+      const covers = issueCovers[name] || {};
+      const issueCoversOut = {};
+      for (const [v, arr] of Object.entries(covers)) {
+        issueCoversOut[String(v)] = arr;
       }
 
       return {
@@ -123,7 +147,7 @@ function main() {
         ownedCoverA: ownedA,
         ownedOther: ownedOther,
         imageUrl: seriesImages[name] || "",
-        issueImages: issueImgs,
+        issueCovers: issueCoversOut,
       };
     });
 

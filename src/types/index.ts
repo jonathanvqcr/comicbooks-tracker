@@ -1,3 +1,8 @@
+export interface CoverInfo {
+  cover: string;
+  imageUrl: string;
+}
+
 export interface Series {
   id: string;
   name: string;
@@ -6,7 +11,7 @@ export interface Series {
   ownedCoverA: number[];
   ownedOther: number[];
   imageUrl: string;
-  issueImages: Record<string, string>;
+  issueCovers: Record<string, CoverInfo[]>;
 }
 
 export interface Collection {

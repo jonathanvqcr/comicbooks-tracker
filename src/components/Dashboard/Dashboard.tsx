@@ -1,7 +1,7 @@
 import { useState, useMemo } from "react";
 import collection from "../../data/collection.json";
 import type { Series, SortField } from "../../types";
-import { getCompletionPercent } from "../../utils/collection";
+import { getCompletionPercent, isComplete, getConsecutiveCount } from "../../utils/collection";
 import SeriesCard from "./SeriesCard";
 import "./Dashboard.css";
 
@@ -26,11 +26,9 @@ export default function Dashboard() {
     return result;
   }, [search, sort]);
 
-  const totalOwned = allSeries.reduce((n, s) => n + s.ownedCoverA.length, 0);
+  const totalConsecutive = allSeries.reduce((n, s) => n + getConsecutiveCount(s), 0);
   const totalIssues = allSeries.reduce((n, s) => n + s.totalIssues, 0);
-  const completeSeries = allSeries.filter(
-    (s) => s.ownedCoverA.length === s.totalIssues
-  ).length;
+  const completeSeries = allSeries.filter((s) => isComplete(s)).length;
 
   return (
     <div>
@@ -41,9 +39,9 @@ export default function Dashboard() {
         </div>
         <div className="stat">
           <span className="stat-value">
-            {totalOwned}/{totalIssues}
+            {totalConsecutive}/{totalIssues}
           </span>
-          <span className="stat-label">Cover A Owned</span>
+          <span className="stat-label">Consecutive Owned</span>
         </div>
         <div className="stat">
           <span className="stat-value">{completeSeries}</span>
@@ -51,7 +49,7 @@ export default function Dashboard() {
         </div>
         <div className="stat">
           <span className="stat-value">
-            {Math.round((totalOwned / totalIssues) * 100)}%
+            {Math.round((totalConsecutive / totalIssues) * 100)}%
           </span>
           <span className="stat-label">Overall</span>
         </div>

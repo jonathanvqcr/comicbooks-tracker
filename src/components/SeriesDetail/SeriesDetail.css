@@ -97,7 +97,7 @@
 
 .issue-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
   gap: 12px;
 }
 
@@ -113,10 +113,38 @@
   padding-bottom: 8px;
 }
 
+.issue-covers {
+  display: flex;
+  gap: 4px;
+  width: 100%;
+  padding: 6px 6px 0;
+}
+
+.cover-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+  min-width: 0;
+}
+
 .issue-cover {
   width: 100%;
   aspect-ratio: 2/3;
   object-fit: cover;
+  border-radius: 3px;
+}
+
+.cover-label {
+  font-size: 0.6rem;
+  font-weight: 500;
+  color: var(--text-secondary);
+  margin-top: 2px;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 100%;
 }
 
 .issue-placeholder {

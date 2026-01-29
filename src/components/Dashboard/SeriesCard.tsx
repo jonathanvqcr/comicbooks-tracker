@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import type { Series } from "../../types";
-import { getCompletionPercent, isComplete } from "../../utils/collection";
+import { getCompletionPercent, isComplete, getConsecutiveCount } from "../../utils/collection";
 import "./Dashboard.css";
 
 export default function SeriesCard({ series }: { series: Series }) {
@@ -25,7 +25,7 @@ export default function SeriesCard({ series }: { series: Series }) {
         <div className="card-stat">
           <span>Issues 1–{series.totalIssues}</span>
           <span>
-            {series.ownedCoverA.length}/{series.totalIssues} Cover A
+            {getConsecutiveCount(series)}/{series.totalIssues} consecutive
           </span>
         </div>
         <div className="progress-bar">

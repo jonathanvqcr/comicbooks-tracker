@@ -4,7 +4,8 @@ import type { Series } from "../../types";
 import {
   getIssueStatus,
   getCompletionPercent,
-  getMissingCoverA,
+  getMissingIssues,
+  getConsecutiveCount,
 } from "../../utils/collection";
 import "./SeriesDetail.css";
 
@@ -24,7 +25,8 @@ export default function SeriesDetail() {
   }
 
   const pct = getCompletionPercent(series);
-  const missing = getMissingCoverA(series);
+  const consecutive = getConsecutiveCount(series);
+  const missing = getMissingIssues(series);
   const issues = Array.from({ length: series.totalIssues }, (_, i) => i + 1);
 
   return (
@@ -48,14 +50,14 @@ export default function SeriesDetail() {
         <div className="detail-stats">
           <span className="detail-pct">{pct}%</span>
           <span className="detail-count">
-            {series.ownedCoverA.length}/{series.totalIssues} Cover A
+            {consecutive}/{series.totalIssues} consecutive
           </span>
         </div>
       </div>
 
       {missing.length > 0 && (
         <div className="missing-banner">
-          Missing Cover A: #{missing.join(", #")}
+          Missing: #{missing.join(", #")}
         </div>
       )}
 
@@ -74,15 +76,22 @@ export default function SeriesDetail() {
       <div className="issue-grid">
         {issues.map((num) => {
           const status = getIssueStatus(series, num);
-          const imgUrl = series.issueImages[String(num)];
+          const covers = series.issueCovers[String(num)] || [];
           return (
             <div key={num} className={`issue-cell issue-${status}`}>
-              {imgUrl ? (
-                <img
-                  src={imgUrl}
-                  alt={`${series.name} #${num}`}
-                  className="issue-cover"
-                />
+              {covers.length > 0 ? (
+                <div className="issue-covers">
+                  {covers.map((c, i) => (
+                    <div key={i} className="cover-item">
+                      <img
+                        src={c.imageUrl}
+                        alt={`${series.name} #${num} ${c.cover}`}
+                        className="issue-cover"
+                      />
+                      <span className="cover-label">{c.cover}</span>
+                    </div>
+                  ))}
+                </div>
               ) : (
                 <div className="issue-placeholder" />
               )}
