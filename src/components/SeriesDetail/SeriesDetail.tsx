@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { useParams, Link } from "react-router-dom";
 import collection from "../../data/collection.json";
 import type { Series } from "../../types";
@@ -23,6 +24,8 @@ export default function SeriesDetail() {
       </div>
     );
   }
+
+  const [lightbox, setLightbox] = useState<{ src: string; alt: string } | null>(null);
 
   const pct = getCompletionPercent(series);
   const consecutive = getConsecutiveCount(series);
@@ -87,6 +90,10 @@ export default function SeriesDetail() {
                         src={c.imageUrl}
                         alt={`${series.name} #${num} ${c.cover}`}
                         className="issue-cover"
+                        onClick={(e) => {
+                          e.stopPropagation();
+                          setLightbox({ src: c.imageUrl, alt: `${series.name} #${num} - ${c.cover}` });
+                        }}
                       />
                       <span className="cover-label">{c.cover}</span>
                     </div>
@@ -100,6 +107,18 @@ export default function SeriesDetail() {
           );
         })}
       </div>
+
+      {lightbox && (
+        <div className="lightbox-overlay" onClick={() => setLightbox(null)}>
+          <div className="lightbox-content" onClick={(e) => e.stopPropagation()}>
+            <img src={lightbox.src} alt={lightbox.alt} className="lightbox-img" />
+            <p className="lightbox-caption">{lightbox.alt}</p>
+            <button className="lightbox-close" onClick={() => setLightbox(null)}>
+              &times;
+            </button>
+          </div>
+        </div>
+      )}
     </div>
   );
 }
